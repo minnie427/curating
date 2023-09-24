@@ -1,40 +1,294 @@
-<html lang="en">
-<head>
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-<link rel="stylesheet" type="text/css" href="style.css"/>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-<h1>DIGITAL EXTENTION OF THE BODIES</h1>
-
-<h2>
-    Welcome to our project
-</h2>
-
-<h3>
-    Lorem ipsum dolor sit amet. Et nihil laborum non obcaecati consequatur et labore ratione sed soluta galisum ex sequi consequatur et illum necessitatibus eos maxime doloribus. Ea aperiam saepe et beatae sunt At debitis voluptatem sed saepe nihil eos libero mollitia.
-
-Ut obcaecati laborum est similique totam sit ducimus illo. Qui voluptatem similique qui suscipit quaerat non omnis atque et odio illo est dolor ullam quo tenetur blanditiis.
-
-33 voluptatibus voluptate in placeat dolores sit dolore omnis. Ab officiis accusamus cum illum obcaecati est omnis debitis sit sequi necessitatibus qui reprehenderit vero aut iste corrupti et molestiae repudiandae? Non voluptas sint ut aspernatur consequatur in voluptate delectus id pariatur galisum in corrupti corrupti eos doloremque excepturi. Est dignissimos quos ut nisi fugit et neque placeat rem nisi natus vel vero voluptatem est natus nihil vel sapiente nesciunt.
-</h3>
-
-<h3>
-    Lorem ipsum dolor sit amet. Et nihil laborum non obcaecati consequatur et labore ratione sed soluta galisum ex sequi consequatur et illum necessitatibus eos maxime doloribus. Ea aperiam saepe et beatae sunt At debitis voluptatem sed saepe nihil eos libero mollitia.
-
-Ut obcaecati laborum est similique totam sit ducimus illo. Qui voluptatem similique qui suscipit quaerat non omnis atque et odio illo est dolor ullam quo tenetur blanditiis.
-
-33 voluptatibus voluptate in placeat dolores sit dolore omnis. Ab officiis accusamus cum illum obcaecati est omnis debitis sit sequi necessitatibus qui reprehenderit vero aut iste corrupti et molestiae repudiandae? Non voluptas sint ut aspernatur consequatur in voluptate delectus id pariatur galisum in corrupti corrupti eos doloremque excepturi. Est dignissimos quos ut nisi fugit et neque placeat rem nisi natus vel vero voluptatem est natus nihil vel sapiente nesciunt.
-</h3>
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
 
 
-</body>
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="">
 
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Responsive portfolio website Chris - Bedimcode</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    Body Morphosis
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="ri-home-5-line"></i> HOME
+                            </a>
+                        </li>
+                        
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="ri-article-line"></i> ABOUT
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#gallery" class="nav__link">
+                                <i class="ri-image-line"></i> GALLERY
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#minnie" class="nav__link">
+                                <i class="ri-user-heart-line"></i> MINNIE'S
+                            </a>
+                        </li>
+                        
+                        <li class="nav__item">
+                            <a href="#adrian" class="nav__link">
+                                <i class="ri-user-star-line"></i> ADRIAN'S
+                            </a>
+                        </li>
+                        
+                        <li class="nav__item">
+                            <a href="#feedback" class="nav__link">
+                                <i class="ri-survey-line"></i> FEEDBACK
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Close Button -->
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+                  <!-- Day/Night Theme change button -->
+                <div class="nav__buttons">
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                    <!-- Toggle Button -->
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-4-line"></i>
+                    </div>
+                </div>
+              
+
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid section__border">
+                    <div class="home__data grid">
+                        <h1 class="home__title">
+                            Hello, <br>
+                            Welcome to BodyMorphosis <br>
+                            6th October 1:30-4:30pm
+                        </h1>
+                        <div class="home__blob grid">
+                            <div class="home__profile">
+                                <img src="assets/img/postertest.png" alt="home profile">
+                            </div>
+                        </div>
+                    </div> 
+            <!--==================== HOME INFO 1 ====================-->
+                    <div class="home__info">
+                        <div>
+                            <h3 class="home__info-title">
+                                INFORMATION BLAH
+                            </h3>
+                            <p class="home__info-description">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas harum, beatae minima itaque vitae esse? Sapiente saepe, id, ullam laudantium obcaecati ipsam sunt perspiciatis possimus exercitationem dolore optio. Rem, et!
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!--==================== ABOUT(SKILLS) ====================-->
+            <section class="about section" id="about">
+                <h2 class="section__title">ABOUT THE PROJECT</h2>
+                <span class="section__subtitle">BODYMORPHOSIS</span>
+                
+                <div class="about__container container grid section__border">
+                <div class="about__info">
+                    <div>
+                        <h3 class="about__info-title">
+                            INFORMATION BLAH
+                        </h3>
+                        <p class="about__info-description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas harum, beatae minima itaque vitae esse? Sapiente saepe, id, ullam laudantium obcaecati ipsam sunt perspiciatis possimus exercitationem dolore optio. Rem, et!
+                                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas harum, beatae minima itaque vitae esse? Sapiente saepe, id, ullam laudantium obcaecati ipsam sunt perspiciatis possimus exercitationem dolore optio. Rem, et!
+
+                        </p>
+                    </div>
+                </div></div>
+             
+
+            </section>
+
+
+
+            <!--==================== gallery / QUALIFICATION ====================-->
+            <section class="gallery section" id="gallery">
+                <h2 class="section__title">PHOTOS / VIDEOS</h2>
+                <span class="section__subtitle">BODYMORPHOSIS</span>
+                
+                <div class="gallery__container  container grid section__border"">
+                <div class="gallery__photos">
+                    <img src="assets/img/postertest.png" alt="photos">
+                </div>
+            </div>
+            </section>
+
+            <!--==================== minnie/ SERVICES ====================-->
+            <section class="minnie section" id="minnie">
+                <h2 class="section__title">QUANTUM FACES</h2>
+                <span class="section__subtitle">MINNIE PARK</span>
+                
+                <div class="minnie__container container grid section__border">
+                <div class="minnie__info">
+                    <div>
+                        <h3 class="minnie__info-title">
+                            INFORMATION BLAH
+                        </h3>
+                        <p class="minnie__info-description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas harum, beatae minima itaque vitae esse? Sapiente saepe, id, ullam laudantium obcaecati ipsam sunt perspiciatis possimus exercitationem dolore optio. Rem, et!
+                           <br><br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas harum, beatae minima itaque vitae esse? Sapiente saepe, id, ullam laudantium obcaecati ipsam sunt perspiciatis possimus exercitationem dolore optio. Rem, et!
+                        <br><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas harum, beatae minima itaque vitae esse? Sapiente saepe, id, ullam laudantium obcaecati ipsam sunt perspiciatis possimus exercitationem dolore optio. Rem, et!
+                        </p>
+                    </div>
+                </div></div>
+            </section>
+
+            <!--==================== adrian/PROJECTS ====================-->
+            <section class="adrian section" id="adrian">
+                <h2 class="section__title">PHARMACON</h2>
+                <span class="section__subtitle">ADRIAN FRICHITTHAVONG</span>
+                
+                <div class="adrian__container container grid section__border">
+                <div class="adrian__info">
+                    <div>
+                        <h3 class="adrian__info-title">
+                            INFORMATION BLAH
+                        </h3>
+                        <p class="adrian__info-description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas harum, beatae minima itaque vitae esse? Sapiente saepe, id, ullam laudantium obcaecati ipsam sunt perspiciatis possimus exercitationem dolore optio. Rem, et!
+                            <br><br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas harum, beatae minima itaque vitae esse? Sapiente saepe, id, ullam laudantium obcaecati ipsam sunt perspiciatis possimus exercitationem dolore optio. Rem, et!
+                            <br><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas harum, beatae minima itaque vitae esse? Sapiente saepe, id, ullam laudantium obcaecati ipsam sunt perspiciatis possimus exercitationem dolore optio. Rem, et!    
+                        </p>
+                    </div>
+                </div></div>
+            </section>
+
+            <!--==================== TESTIMONIAL ====================-->
+            <section class="testimonial section" >
+                
+            </section>
+
+            <!--==================== feedback / CONTACT ====================-->
+            <section class="feedback section" id="feedback">
+                <h2 class="section__title">FEEDBACK</h2>
+                <span class="section__subtitle">What did you think?</span>
+                
+                <div class="contact__container container grid section__border">
+                    <div class="contact__content">
+                        <h3 class="contact__title">
+                        <i class="ri-smartphone-line"></i> CONTACT
+                        </h3>
+                        <div class="contact__info">
+                        <div class="contact__data">
+                            <span class="contact__data-title">ADRIAN's INSTAGRAM</span>
+                            <span class="contact__data-info">@adrian</span>
+                            <a href="https://www.instagram.com/a.frich/" target="_blank" class="contact__button">
+                                FOLLOW ME <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                        <div class="contact__data">
+                            <span class="contact__data-title">MINNIE's INSTAGRAM</span>
+                            <span class="contact__data-info">@minniepark.studio</span>
+                            <a href="https://www.instagram.com/minniepark.studio/" target="_blank" class="contact__button">
+                                FOLLOW ME <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                        
+                        </div>
+                    </div>
+
+                    <div class="contact__content">
+                        <h3 class="contact__title">
+                            <i class="ri-message-3-line"></i> TELL US WHAT YOU THINK
+                        </h3>
+
+                        <form action="" class="contact__form" id="contact-form">
+                            <div class="contact__form-div">
+                                <label class="contact__form-tag">Names</label>
+                                <input type="text" name="user_name" required placeholder="How was your experience with BodyMorphosis?" class="contact__form-input" id="contact-name">
+                            </div>
+                            <div class="contact__form-div">
+                                <label class="contact__form-tag">Mail</label>
+                                <input type="text" name="user_email" required placeholder="Write your email" class="contact__form-input" id="contact-email">
+                            </div>
+                            <div class="contact__form-div contact__form-area">
+                                <label class="contact__form-tag">Comments</label>
+                                <textarea name="user_comment" placeholder="Any other comments?" id="contact-project" cols="30" rows="10" class="contact__form-input"></textarea>
+                            </div>
+
+                            <p class="contact__message" id="contact-message"></p>
+
+                            <button type="submit" class="contact__button">
+                                Submit <i class="ri-arrow-right-up-line"></i>
+                            </button>
+
+
+                        </form> 
+                    </div>
+
+
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__container container">
+                <hi class="footer__title">BODYMORPHOSIS</hi>
+                <p>CURATING PROJECT</p>
+                <span class="footer__copy">
+                    &#169; Copyright TODA. All rights reserved
+                </span>
+            </div>
+        </footer>
+
+
+        <!--========== SCROLL UP ==========-->
+       <!--  <a href="#" class="scrollup" id="scroll-up">
+
+        </a>
+ -->
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src=""></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src=""></script>
+        
+        <!--=============== EMAIL JS ===============-->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
