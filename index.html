@@ -13,7 +13,7 @@
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
         
         <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
@@ -94,25 +94,33 @@
                     <div class="home__data grid">
                         <h1 class="home__title">
                             Hello, <br>
-                            Welcome to BodyMorphosis <br>
-                            13th October 1:30-7:00pm
+                            Welcome to <br> BodyMorphosis <br><br>
+                            13th October 1:30-7:00pm <br>
+                            Black Box
+
+                        </h1><br>
+                        <img src="assets/img/main.png" alt="photos"><br>
+                        <h1 class="home__title">
+                            
+                            Adrian Frichitthavong<br> 
+                            Minnie Park <br>
+
                         </h1>
-                        <div class="home__blob grid">
+                     <!--    <div class="home__blob grid">
                             <div class="home__profile">
-                                <img src="assets/img/postertest.png" alt="home profile">
+                                <img src="assets/img/main.png" alt="home profile">
                             </div>
-                        </div>
+                        </div> -->
                     </div> 
             <!--==================== HOME INFO 1 ====================-->
                     <div class="home__info">
                         <div>
-                            <h3 class="home__info-title">
-                                BODYMORPHOSIS
-                            </h3>
-                            <p class="home__info-description">
-A collaborative exhibition of interactive 3D art pieces by Minnie Park & Adrian Frichitthavong, unveils a dialogue between art and technology at the BlackBox. This interactive exhibition delves into the convergence of augmented reality and digital environments, provoking reflection on our evolving human experience. AR facial sculptures, inspired by raw human emotion, serve as an opportunity to reflect on our feelings and inner selves. Complementing this, interactive virtual environments, moulded by the omnipresence of AI, confront the viewer with the pressing concerns surrounding its societal impact. Softwares used include TouchDesigner, UnrealEngine5, Metaspark and Blender. BodyMorphoses prompts introspection through audiovisual, interactive and immersive digital environment experiences. 
-
-                            </p>
+                           <!--  <h3 class="home__info-title">
+                                INFORMATION BLAH
+                            </h3> -->
+                            <!-- <p class="home__info-description">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas harum, beatae minima itaque vitae esse? Sapiente saepe, id, ullam laudantium obcaecati ipsam sunt perspiciatis possimus exercitationem dolore optio. Rem, et!
+                            </p> -->
                         </div>
                     </div>
 
@@ -128,10 +136,10 @@ A collaborative exhibition of interactive 3D art pieces by Minnie Park & Adrian 
                 <div class="about__info">
                     <div>
                         <h3 class="about__info-title">
-                            PROJECT DESCRIPTION
+                           Project Overview
                         </h3>
                         <p class="about__info-description">
-AR facial sculptures, inspired by raw human emotion, serve as an opportunity to reflect on our feelings and inner selves. Complementing this, interactive virtual environments, moulded by the omnipresence of AI, confront the viewer with the pressing concerns surrounding its societal impact. Softwares used include TouchDesigner, UnrealEngine5, Metaspark and Blender. BodyMorphoses prompts introspection through audiovisual, interactive and immersive digital environment experiences. 
+                            BodyMorphosis, a collaborative exhibition of interactive 3D art pieces by Minnie Park & Adrian Frichitthavong, unveils a dialogue between art and technology at the BlackBox. This interactive exhibition delves into the convergence of augmented reality and digital environments, provoking reflection on our evolving human experience. AR facial sculptures, inspired by raw human emotion, serve as an opportunity to reflect on our feelings and inner selves. Complementing this, interactive virtual environments, moulded by the omnipresence of AI, confront the viewer with the pressing concerns surrounding its societal impact. Softwares used include TouchDesigner, UnrealEngine5, Metaspark and Blender. BodyMorphoses prompts introspection through audiovisual, interactive and immersive digital environment experiences.  
                         </p>
                     </div>
                 </div></div>
@@ -143,89 +151,176 @@ AR facial sculptures, inspired by raw human emotion, serve as an opportunity to 
 
             <!--==================== gallery / QUALIFICATION ====================-->
             <section class="gallery section" id="gallery">
-                <h2 class="section__title">PHOTOS / VIDEOS</h2>
+                <h2 class="section__title">GALLERY</h2>
                 <span class="section__subtitle">BODYMORPHOSIS</span>
                 
-                <div class="gallery__container  container grid section__border"">
+                <div class="container section__border">
+                    <div class="projects__container swiper">
+                        <div class="swiper-wrapper">
+                             <!--==================== gallery img1 ====================-->
+                             <div class="projects__content swiper-slide">
+                             <img src="assets/img/tv1.png" alt="main image" class="projects__img">
+                                <div>
+                             <span class="projects__subtitle"></span>
+                             <h1 class="projects__title">Main Collaborative Work</h1>
+                            </div></div>
+
+                           <!--==================== gallery img2 ====================-->
+
+                            <div class="projects__content swiper-slide">
+                                <img src="assets/img/tv2.png" alt="main image" class="projects__img">
+                                   <div>
+                                <span class="projects__subtitle"></span>
+                                <h1 class="projects__title">Main Collaborative Work</h1>
+                               </div></div>
+
+                           <!--==================== gallery img3 ====================-->
+
+                               <div class="projects__content swiper-slide">
+                                <img src="assets/img/tv3.png" alt="main image" class="projects__img">
+                                   <div>
+                                <span class="projects__subtitle"></span>
+                                <h1 class="projects__title">Main Collaborative Work</h1>
+                               </div></div>
+                        </div>
+                        <!--swiper arrows-->
+                        <div class="swiper-button-next">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </div>
+                        <!--swiper pagination-->
+                        <div class="swiper-pagination"></div>
+
+                    </div>
+                </div>
+
+
+
+               <!--  <div class="gallery__container  container grid section__border"">
                 <div class="gallery__photos">
                     <img src="assets/img/postertest.png" alt="photos">
                 </div>
-            </div>
+            </div> -->
             </section>
 
             <!--==================== minnie/ SERVICES ====================-->
             <section class="minnie section" id="minnie">
                 <h2 class="section__title">QUANTUM FACES</h2>
-                <span class="section__subtitle">MINNIE PARK</span>
+                <span class="section__subtitle">by MINNIE PARK</span>
                 
                 <div class="minnie__container container grid section__border">
                 <div class="minnie__info">
+
+            
+                    <img src="assets/img/m1.png" alt="photos">
+           
+
                     <div>
                         <h3 class="minnie__info-title">
-                            INFORMATION BLAH
+                            PROJECT DESCRIPTION
                         </h3>
                         <p class="minnie__info-description">
-Humans rely on the memories they have accumulated since birth and react accordingly to these memories. How they think, their perspectives, responses, and the emotions they experience are calculated and computed by neurons formed through past memories. All these memories are gathered to form their thoughts and the system of emotions, which becomes their identity. Humans' thoughts cannot surpass their emotions. Therefore, emotions in humans are the measure of all things.
-                            <br><br> 
-Emotion, from the perspective of quantum physics regarding the electromagnetic field inside the brain, is a form of energy, which means it is also a frequency (Idris, 2020). When humans feel something, they emit energy that can affect others, which, in turn, can affect themselves.
-                        <br><br>
-Even when the given experience is the same, individuals react and feel differently. 'Quantum Faces' provides the experience of AR face filters exploring emotions. This allows the audience to explore and observe their feelings, contemplate their pre-formed system of thoughts and emotions, and consider the effects of giving and receiving emotions/energy on one another.
-                       <br><br>
-                            The main question of the project is, 'If you had the choice to affect others either positively or negatively, what would you choose?'
-                       <br><br>
-Quantum Faces features 4 facial sculptures named with words created by the artist. They represent feelings that do not yet have words, undefined by language. By defining them and giving names to these feelings, it offers the opportunity to process these emotions and move forward, facilitating more effective communication between people.
-                      <br><br>
-                            “Reflethos”
-                            <br>
-The awareness that your mind is listening to what you are saying to yourself. 
-                                <br>
-A moment of realisation that your mind is listening to your words. It's as if you are looking at your inner consciousness as a different person, standing and staring one step away from this person. It's the moment of becoming aware of how your words hold vast and limitless power, demolishing any stereotypes, prejudices, biases, and preconceptions. It’s the feeling of being overwhelmed by the power of your words to yourself.
-                       <br><br>
-                            What are the words you have said to yourself today?
-                                          <br><br>
-“Facevoir”
-                            <br>
-The feeling of desiring to understand your facial expressions.
-                                <br>
-It is when you realise how little attention you pay to look at yourself in the mirror and observe your facial expressions to process what you are going through. It becomes an explorative and speculative journey, an experience you have never encountered before. Your face feels stranger than ever.                       
+                            Humans rely on the memories they have accumulated since birth and react accordingly to these memories. How they think, their perspectives, responses, and the emotions they experience are calculated and computed by neurons formed through past memories. All these memories are gathered to form their thoughts and the system of emotions, which becomes their identity. Humans' thoughts cannot surpass their emotions. Therefore, emotions in humans are the measure of all things.
                             <br><br>
-Now, where is the mirror?
-                                                                      <br><br>
-“Perspectrophe”                            <br>
-The awareness of how everyone looks at you differently 
-                                <br>
-It is believed that every individual perceives the world differently, considering it as a part of their own reality. The sense of awareness that others have varied perceptions of you implies the existence of different versions of yourself in this world.                             <br><br>
-Which version of yourself is the most authentic? Can any of them be considered your true self?
-                                                                                             <br><br>
-“Gazenopsia”                           <br>
-The feeling of thinking that this intense eye contact will become a powerful memory of that person.
-                                <br>
-The feeling of knowing that a particular eye contact with someone will become etched in your memory, much like a vivid picture, which will remain as one of the most powerful images whenever you think about that person. It's as if you will never forget the piercing eyes of your partner or the affectionate eyes of your mother. 
-                           <br> What sort of gazenopsia would you want to evoke?
+                            Emotion, from the perspective of quantum physics regarding the electromagnetic field inside the brain, is a form of energy, which means it is also a frequency (Idris, 2020). When humans feel something, they emit energy that can affect others, which, in turn, can affect themselves.
+                           <br><br>
+                           Even when the given experience is the same, individuals react and feel differently. 'Quantum Faces' provides the experience of AR face filters exploring emotions. This allows the audience to explore and observe their feelings, contemplate their pre-formed system of thoughts and emotions, and consider the effects of giving and receiving emotions/energy on one another.
+                           The main question of the project is, 'If you had the choice to affect others either positively or negatively, what would you choose?'
+                           <br><br>
+                           Quantum Faces features 4 facial sculptures named with words created by the artist. They represent feelings that do not yet have words, undefined by language. By defining them and giving names to these feelings, it offers the opportunity to process these emotions and move forward, facilitating more effective communication between people.
+                        <br><br><br><br></p>
+                        <h3 class="minnie__info-title">
+                            Titles of the masks: Names of the feelings 
+                        </h3>
+                       
+            
+                        <img src="assets/img/pink.png" alt="photos">
+                        <p class="minnie__info-description"> 
+                        “Reflethos”
+                        <br>
+                        The awareness that your mind is listening to what you are saying to yourself. 
+                        <br><br>
+                        A moment of realisation that your mind is listening to your words. It's as if you are looking at your inner consciousness as a different person, standing and staring one step away from this person. It's the moment of becoming aware of how your words hold vast and limitless power, demolishing any stereotypes, prejudices, biases, and preconceptions. It’s the feeling of being overwhelmed by the power of your words to yourself.
+                        <br><br>
+                        What are the words you have said to yourself today?
+                        <br><br></p>
+                        <a href="https://www.instagram.com/ar/844587877157080" target="_blank">
+                            <img class="qrcode" src="assets/img/pinkqr.png" width="300px">
+                        </a>
 
-                            <br><br> </p>
-                    </div>
+                        <br><br> <br><br>
+                        <img src="assets/img/green.png" alt="photos">
+                        <p class="minnie__info-description"> 
+                        “Facevoir”
+                        <br>
+                        The feeling of desiring to understand your facial expressions.
+                        <br><br>
+                        It is when you realise how little attention you pay to look at yourself in the mirror and observe your facial expressions to process what you are going through. It becomes an explorative and speculative journey, an experience you have never encountered before. Your face feels stranger than ever.
+                        <br><br>
+                        What are the words you have said to yourself today?
+                        <br><br></p>
+                        <a href="https://www.instagram.com/ar/2251263605046735" target="_blank">
+                            <img src="assets/img/greenqr.png" width="200px">
+                        </a>
+                        <br><br> <br><br>
+
+                        <img src="assets/img/silver.png" alt="photos">
+                        <p class="minnie__info-description"> 
+                        “Perspectrophe”
+                        <br>
+                        The awareness of how everyone looks at you differently. 
+                        <br><br>
+                        It is believed that every individual perceives the world differently, considering it as a part of their own reality. The sense of awareness that others have varied perceptions of you implies the existence of different versions of yourself in this world. 
+                        <br><br>
+                        Which version of yourself is the most authentic? Can any of them be considered your true self?
+                        <br><br></p>
+                        <a href="https://www.instagram.com/ar/863161174990293" target="_blank">
+                            <img src="assets/img/silverqr.png" width="200px">
+                        </a>
+                        <br><br><br><br>
+
+                        <img src="assets/img/eyes.png" alt="photos">
+                        <p class="minnie__info-description"> 
+                        “Gazenopsia”
+                        <br>
+                        The feeling of thinking that this intense eye contact will become a powerful memory of that person.
+                        <br><br>
+                        The feeling of knowing that a particular eye contact with someone will become etched in your memory, much like a vivid picture, which will remain as one of the most powerful images whenever you think about that person. It's as if you will never forget the piercing eyes of your partner or the affectionate eyes of your mother.
+                        <br><br>
+                        What sort of gazenopsia would you want to evoke?
+                        <br><br></p>
+                        <a href="https://www.instagram.com/ar/1293354997982725" target="_blank">
+                            <img src="assets/img/eyesqr.png" width="200px">
+                        </a>
+                        <br><br><br><br>
+                        </p>
+                        </div>
                 </div></div>
             </section>
 
             <!--==================== adrian/PROJECTS ====================-->
             <section class="adrian section" id="adrian">
                 <h2 class="section__title">PHARMAKON AI</h2>
-                <span class="section__subtitle">ADRIAN FRICHITTHAVONG</span>
+                <span class="section__subtitle">by ADRIAN FRICHITTHAVONG</span>
                 
                 <div class="adrian__container container grid section__border">
                 <div class="adrian__info">
                     <div>
+                        <img src="assets/img/city1.png" alt="photos">
                         <h3 class="adrian__info-title">
                             PROJECT DESCRIPTION
                         </h3>
                         <p class="adrian__info-description">
-Pharmakon #1 reflects on the ethical implications of posthumanist aspirations, as you take form as various AI advertisements scattered around Neo-Melbourne, a place where we co-exist with AI, humans and digital entities personalities have become indistinguishable from one another. The built world provides a lens where AI has seamlessly integrated with a pro-capitalist society, advertising & consumerism become intertwined with our everyday lives. As we question whether it is beneficial or harmful for society to embrace a pro-AI stance to quell the epidemics that plague the modern world, we must also question who are the larger forces at play and who is really benefiting from who?
-
-                            <br><br> 
-Our quest to replicate human emotions parallel our endless thirst for worldly desires.                             
-                            <br><br>
-                        </p>
+                            Pharmakon_AI reflects on the ethical implications of posthumanist aspirations, as you take form as various AI advertisements scattered around Neo-Melbourne, a place where we co-exist with AI, humans and digital entities personalities have become indistinguishable from one another.
+                           <br><br></p>
+                           <img src="assets/img/city2.png" alt="photos">
+                           <p class="adrian__info-description">
+                           The built world provides a lens where AI has seamlessly integrated with a pro-capitalist society, advertising & consumerism become intertwined with our everyday lives. As we question whether it is beneficial or harmful for society to embrace a pro-AI stance to quell the epidemics that plague the modern world, we must also question who are the larger forces at play and who is really benefiting from who?
+                           <br><br>
+                           </p>
+                           <img src="assets/img/city3.png" alt="photos">
                     </div>
                 </div></div>
             </section>
@@ -238,7 +333,7 @@ Our quest to replicate human emotions parallel our endless thirst for worldly de
             <!--==================== feedback / CONTACT ====================-->
             <section class="feedback section" id="feedback">
                 <h2 class="section__title">FEEDBACK</h2>
-                <span class="section__subtitle">What did you think?</span>
+                <span class="section__subtitle">We value your insights!</span>
                 
                 <div class="contact__container container grid section__border">
                     <div class="contact__content">
@@ -272,15 +367,16 @@ Our quest to replicate human emotions parallel our endless thirst for worldly de
                         <form action="" class="contact__form" id="contact-form">
                             <div class="contact__form-div">
                                 <label class="contact__form-tag">Q.1</label>
-                                <input type="text" name="user_name" required placeholder="How was your experience with BodyMorphosis?" class="contact__form-input" id="contact-name">
+                                <input type="text" name="user_name" required placeholder="What do you think works particularly well in this artwork?"
+                                " class="contact__form-input" id="contact-name">
                             </div>
                             <div class="contact__form-div">
                                 <label class="contact__form-tag">Q.2</label>
-                                <input type="text" name="user_email" required placeholder="What could have done differently?" class="contact__form-input" id="contact-email">
+                                <input type="text" name="user_email" required placeholder="What would have done differently?" class="contact__form-input" id="contact-email">
                             </div>
                             <div class="contact__form-div contact__form-area">
                                 <label class="contact__form-tag">Q.3</label>
-                                <textarea name="user_comment" placeholder="Any other comments?" id="contact-project" cols="30" rows="10" class="contact__form-input"></textarea>
+                                <textarea name="user_comment" placeholder="How was your experience with BodyMorphosis?  How did the experience make you feel?  Any other comments?" id="contact-project" cols="30" rows="10" class="contact__form-input"></textarea>
                             </div>
 
                             <p class="contact__message" id="contact-message"></p>
@@ -319,7 +415,7 @@ Our quest to replicate human emotions parallel our endless thirst for worldly de
         <script src=""></script>
 
         <!--=============== SWIPER JS ===============-->
-        <script src=""></script>
+        <script src="assets/js/swiper-bundle.min.js"></script>
         
         <!--=============== EMAIL JS ===============-->
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>

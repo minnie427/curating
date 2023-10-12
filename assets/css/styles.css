@@ -8,8 +8,8 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(207, 65%, 65%);
-  --title-color: hsl(207, 4%, 16%);
+  --first-color: hsl(322, 100%, 51%);
+  --title-color: hsl(0, 0%, 11%);
   --text-color: hsl(207, 4%, 28%);
   --text-color-light: hsl(207, 4%, 56%);
   --body-color: hsl(207, 4%, 99%);
@@ -20,20 +20,20 @@
   /* Blue: 207 - Purple: 250 - Pink: 356 - Teal: 174 */
   --gradient-color: linear-gradient(180deg,
                       hsla(207, 48%, 72%, 0),
-                      hsla(207, 65%, 65%, 1));
+                      rgb(224, 108, 224));
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: 'Roboto', sans-serif;
   --title-font: 'Handjet', cursive;
-  --biggest-font-size: 1.5rem;
-  --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
-  --tiny-font-size: .625rem;
+  --biggest-font-size: 2.5rem;
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 1.25rem;
+  --small-font-size: 0.9rem;
+  --smaller-font-size: .8rem;
+  --tiny-font-size: .7rem;
 
   /*========== Font weight ==========*/
   --font-medium: 500;
@@ -48,14 +48,14 @@
 /* Responsive typography */
 @media screen and (min-width: 1024px) {
   :root {
-    --biggest-font-size: 3rem;
-    --h1-font-size: 2.25rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
-    --tiny-font-size: .688rem;
+    --biggest-font-size: 4.5rem;
+    --h1-font-size: 3rem;
+    --h2-font-size: 2rem;
+    --h3-font-size: 1.5rem;
+    --normal-font-size: 2rem;
+    --small-font-size: 2rem;
+    --smaller-font-size: 2rem;
+    --tiny-font-size: 1rem;
   }
 }
 
@@ -222,7 +222,7 @@ body.dark-theme {
 
 .nav__toggle{
   display: flex;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   cursor: pointer;
 }
 
@@ -343,7 +343,7 @@ body.dark-theme {
 
 .home__info-description,
 .home__info-number{
-  font-family: var(--title-font);
+  font-family: var(--body-font);
   color: var(--title-color);
 }
 
@@ -368,14 +368,14 @@ body.dark-theme {
 
 .about__info-title{
   font-family: var(--body-font);
-  font-size: var(--small-font-size);
+  font-size: var(--font-medium);
   font-weight: 400;
   color: var(--text-color-light);
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .about__info-description{
-  font-family: var(--title-font);
+  font-family: var(--body-font);
   color: var(--title-color);
 }
 
@@ -389,6 +389,30 @@ body.dark-theme {
 
 /*=============== Gallery / QUALIFICATION  ===============*/
 
+.projects__container{
+  overflow: initial;
+}
+
+.projects__content{
+  display: grid;
+  justify-content: center;
+}
+
+.projects__img{
+  width: 300px;
+ /*  border-radius: .8rem; */
+  margin-bottom: 1.25rem;
+}
+
+.projects__subtitle{
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.projects__title{
+  font-size: var(--h2-font-size);
+  text-align: center;
+}  
 
 .gallery__container{
 text-align: center;
@@ -399,7 +423,6 @@ align-items: flex-end;
 row-gap: 4rem;
 padding-top: 2em;
 transition: background .4s; /* for dark mode animation */
-
 }
 
 .gallery__photos{
@@ -426,14 +449,14 @@ transition: background .4s; /* for dark mode animation */
 
 .minnie__info-title{
   font-family: var(--body-font);
-  font-size: var(--small-font-size);
+  font-size: var(--font-medium);
   font-weight: 400;
   color: var(--text-color-light);
   margin-bottom: 1rem;
 }
 
 .minnie__info-description{
-  font-family: var(--title-font);
+  font-family: var(--body-font);
   color: var(--title-color);
 }
 
@@ -441,6 +464,19 @@ transition: background .4s; /* for dark mode animation */
   padding-right: 4rem;
 }
 
+.minnie__container img{
+  width: 100%;
+ justify-content: center;
+ margin-bottom: 1.25rem;
+ margin-top: 1.25rem;
+}
+
+.minnie__container .qrcode img{
+  width: 300px;
+ justify-content: center;
+ margin-bottom: 1.25rem;
+ margin-top: 1.25rem;
+}
 /*=============== adrian/ PROJECTS ===============*/
 
 .adrian__container{
@@ -456,14 +492,14 @@ transition: background .4s; /* for dark mode animation */
 
 .adrian__info-title{
   font-family: var(--body-font);
-  font-size: var(--small-font-size);
+  font-size: var(--font-medium);
   font-weight: 400;
   color: var(--text-color-light);
   margin-bottom: 1rem;
 }
 
 .adrian__info-description{
-  font-family: var(--title-font);
+  font-family: var(--body-font);
   color: var(--title-color);
 }
 
@@ -471,8 +507,56 @@ transition: background .4s; /* for dark mode animation */
   padding-right: 4rem;
 }
 
+.adrian__container img{
+  width: 100%;
+ justify-content: center;
+ margin-bottom: 1.5rem;
+ margin-top: 1.5rem;
+}
 
 /* Swiper class */
+
+.projects__container .swiper-button-prev::after,
+.projects__container .swiper-button-next::after{
+  content: '';
+}
+
+.projects__container .swiper-button-prev,
+.projects__container .swiper-button-next{
+  width: initial;
+  height: initial;
+  margin: initial;
+  font-size: 2.5rem;
+  color: var(--title-color);
+}
+
+.projects__container .swiper-button-prev{
+  left: -1rem;
+  top: 4.5rem;
+}
+
+
+.projects__container .swiper-button-next{
+  right: -1rem;
+  top: 4.5rem;
+}
+
+.projects__container .swiper-slide{
+  margin-bottom: 4.5rem;
+}
+
+.projects__container .swiper-pagination-bullets{
+  bottom: 0;
+}
+
+.projects__container .swiper-pagination-bullet{
+  background-color: var(--text-color-light);
+  opacity: initial;
+}
+
+.projects__container .swiper-pagination-bullet-active{
+  background-color: var(--title-color);
+}
 
 
 /*=============== TESTIMONIAL ===============*/
@@ -492,13 +576,13 @@ transition: background .4s; /* for dark mode animation */
   justify-content: center;
   align-items: center;
   column-gap: .5rem;
-  font-size: var(--small-font-size);
+  font-size: var(--font-medium);
   font-weight: var(--font-semi-bold);
   margin-bottom: 2.5rem;;
 }
 
 .contact__title i{
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: initial;
 }
 
@@ -517,12 +601,12 @@ transition: background .4s; /* for dark mode animation */
 }
 
 .contact__data-title{
-  font-size: var(--small-font-size);
+  font-size: var(--font-medium);
   color: var(--text-color-light);
 }
 
 .contact__data-info{
-  font-size: var(--small-font-size);
+  font-size: var(--font-medium);
   font-family: var(--title-font);
   color: var(--title-color);
 }
@@ -533,11 +617,11 @@ transition: background .4s; /* for dark mode animation */
   align-items: center;
   column-gap: .5rem;
   color: var(--title-color);
-  font-size: var(--small-font-size);
+  font-size: var(--font-medium);
 }
 
 .contact__button i{
-  font-size: 1rem;
+  font-size: 2rem;
   transition: transform .3s;
 }
 
@@ -578,7 +662,7 @@ transition: background .4s; /* for dark mode animation */
   z-index: 10;
   background-color: var(--body-color);
   color: var(--title-color);
-  font-size: var(--smaller-font-size);
+  font-size: var(--font-medium);
   font-weight: var(--font-medium);
   padding: .35rem;
   transition: background .4s; /* for dark mode animation */
@@ -604,7 +688,7 @@ transition: background .4s; /* for dark mode animation */
 }
 
 .contact__form .contact__button i{
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: initial;
 }
 
