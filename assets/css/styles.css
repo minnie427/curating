@@ -26,7 +26,7 @@
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: 'Roboto', sans-serif;
   --title-font: 'Handjet', cursive;
-  --biggest-font-size: 2.5rem;
+  --biggest-font-size: 2.3rem;
   --h1-font-size: 2rem;
   --h2-font-size: 1.5rem;
   --h3-font-size: 1.25rem;
@@ -348,7 +348,7 @@ body.dark-theme {
 }
 
 .home__info-description{
-  padding-right: 4rem;
+  padding-right: 1rem;
 }
 
 
@@ -380,7 +380,7 @@ body.dark-theme {
 }
 
 .about__info-description{
-  padding-right: 4rem;
+  padding-right: 1rem;
 }
 
 
@@ -461,8 +461,16 @@ transition: background .4s; /* for dark mode animation */
 }
 
 .minnie__info-description{
-  padding-right: 4rem;
+  padding-right: 1rem;
 }
+
+.minnie__img-description{
+  font-family: var(--title-font);
+  color: var(--title-color);
+  text-align: center;
+  font-size: var(--small-font-size);
+}
+
 
 .minnie__container img{
   width: 100%;
@@ -504,7 +512,7 @@ transition: background .4s; /* for dark mode animation */
 }
 
 .adrian__info-description{
-  padding-right: 4rem;
+  padding-right: 1rem;
 }
 
 .adrian__container img{
@@ -636,7 +644,7 @@ transition: background .4s; /* for dark mode animation */
 
 .contact__form-div{
   position: relative;
-  height: 4rem;
+  height: 7rem;
 }
 
 .contact__form-input{
@@ -647,12 +655,13 @@ transition: background .4s; /* for dark mode animation */
   height: 100%;
   border: 2px solid var(--text-color-light);
   border-radius: 0.4rem;
-  padding: 1.5rem;
+  padding: 2rem;
   font-size: var(--normal-font-size);
   font-family: var(--title-font);
   background: none;
   outline: none;
   z-index: 1;
+  overflow: hidden;
 }
 
 .contact__form-tag{
@@ -669,7 +678,7 @@ transition: background .4s; /* for dark mode animation */
 }
 
 .contact__form-area{
-  height: 10rem;
+  height: 15rem;
 }
 
 .contact__form-area textarea{
