@@ -391,27 +391,27 @@ body.dark-theme {
 
 /*=============== Gallery ===============*/
 
-.projects__container{
+.gallery__container{
   overflow: initial;
 }
 
-.projects__content{
+.gallery__content{
   display: grid;
   justify-content: center;
 }
 
-.projects__img{
+.gallery__img{
   width: 300px;
  /*  border-radius: .8rem; */
   margin-bottom: 1.25rem;
 }
 
-.projects__subtitle{
+.gallery__subtitle{
   font-size: var(--small-font-size);
   color: var(--text-color-light);
 }
 
-.projects__title{
+.gallery__title{
   font-size: var(--h2-font-size);
   text-align: center;
 }  
@@ -427,15 +427,10 @@ padding-top: 2em;
 transition: background .4s; /* for dark mode animation */
 }
 
-.gallery__photos{
-  overflow: hidden;
-  display: flex;
-  width: 300px;
-}
 
-.gallery__photo img{
+/* .gallery__photo img{
   width: 300px;
-}
+} */
 
 /*=============== minnie  ===============*/
 .minnie__container{
@@ -504,8 +499,8 @@ transition: background .4s; /* for dark mode animation */
   row-gap: 2rem;
 }
 
-.minnie .section__title{
-  color: var(--body-color2);
+.adrian .section__title{
+  color: var(--body-color3);
 }
 
 .adrian__info-title{
@@ -534,13 +529,13 @@ transition: background .4s; /* for dark mode animation */
 
 /* Swiper class */
 
-.projects__container .swiper-button-prev::after,
-.projects__container .swiper-button-next::after{
+.gallery__container .swiper-button-prev::after,
+.gallery__container .swiper-button-next::after{
   content: '';
 }
 
-.projects__container .swiper-button-prev,
-.projects__container .swiper-button-next{
+.gallery__container .swiper-button-prev,
+.gallery__container .swiper-button-next{
   width: initial;
   height: initial;
   margin: initial;
@@ -548,31 +543,31 @@ transition: background .4s; /* for dark mode animation */
   color: var(--title-color);
 }
 
-.projects__container .swiper-button-prev{
+.gallery__container .swiper-button-prev{
   left: -1rem;
   top: 4.5rem;
 }
 
 
-.projects__container .swiper-button-next{
+.gallery__container .swiper-button-next{
   right: -1rem;
   top: 4.5rem;
 }
 
-.projects__container .swiper-slide{
+.gallery__container .swiper-slide{
   margin-bottom: 4.5rem;
 }
 
-.projects__container .swiper-pagination-bullets{
+.gallery__container .swiper-pagination-bullets{
   bottom: 0;
 }
 
-.projects__container .swiper-pagination-bullet{
+.gallery__container .swiper-pagination-bullet{
   background-color: var(--text-color-light);
   opacity: initial;
 }
 
-.projects__container .swiper-pagination-bullet-active{
+.gallery__container .swiper-pagination-bullet-active{
   background-color: var(--title-color);
 }
 
@@ -784,7 +779,8 @@ transition: background .4s; /* for dark mode animation */
   .nav__list{
     gap: 1rem 1.25rem
   }
-  .gallery__img{
+
+  .gallery__img {
     width: 200px;
     justify-self: center;
   }
@@ -801,15 +797,30 @@ transition: background .4s; /* for dark mode animation */
     margin: 0 auto;
   }
   .gallery__container{
+    width: 400px;
     overflow: hidden;
   }
    
-  .gallery__img{
-   width: 400px;
-  justify-self: center;
+
+  .gallery__container .swiper-button-prev{
+    left: 1rem;
+  }
+
+  .gallery__container .swiper-button-next{
+    right: 1rem;
   }
 
 }
+
+
+@media screen and (min-width: 767px){
+  .gallery__container {
+    width: 500px;
+  }
+
+}
+
+
 
 /* For large devices */
 @media screen and (min-width: 1023px){
@@ -833,7 +844,7 @@ transition: background .4s; /* for dark mode animation */
   .nav__link i,
   .nav__toggle,
   .nav__close{
-    display: none;
+    display: none; 
   }
 
   .nav__menu{
@@ -868,20 +879,41 @@ transition: background .4s; /* for dark mode animation */
 
   .section{
     padding-block: 8rem 0;
+    align-items: center;
   }
 
   .home__title{
     font-size: 2.25rem;
   }
+
+  .gallery__img{
+    width: 400px;
+    justify-content: center;
+  }
+
+  .gallery__container .swiper-button-prev{
+    left: 1rem;
+  }
+  
+  .gallery__container .swiper-button-next{
+    right: 1rem;
+  }
+  
+  .gallery__container{
+    width: 600px;
+   align-items: center;
+    justify-content: center;
+  }
+
 }
 
-@media screen and (min-width: 1048px){
+/* @media screen and (min-width: 1048px){
   .container{
     margin: 1rem;
   }
-}
+} */
 
-@media screen and (min-width: 1060px){
+@media screen and (min-width: 1200px){
  .section__border{
   padding-bottom: 6rem;
  }
@@ -904,13 +936,49 @@ transition: background .4s; /* for dark mode animation */
   border-radius: 12.5rem;
 }
 
-.gallery__photos{
-  width: 600px;
-}
 
 .home__profile img{
   width: 600px;
 }
+ 
+.gallery__container{
+  width: 900px;
+}
+
+
+.gallery__container .swiper-button-prev,
+.gallery__container .swiper-button-next{
+  font-size: 3rem;
+}
+
+.gallery__container .swiper-button-prev{
+  left: -1rem;
+}
+
+.gallery__container .swiper-button-next{
+  right: -1rem;
+}
+
+.gallery__container .swiper-slide{
+  margin-bottom: 6.5rem;
+}
+
+.gallery__img{
+
+ width: 350px;
+}
+
+.gallery__container{
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+
+  transition: background .4s; /* for dark mode animation */
+  }
 
 .footer__container{
   padding: 4rem 0 3rem;
@@ -923,42 +991,3 @@ transition: background .4s; /* for dark mode animation */
 
 }
 
-@media screen and (min-width: 1180px){
-  .section__border{
-   padding-bottom: 6rem;
-  }
- 
-  .section__subtitle{
-   margin-bottom: 5rem;
-  }
- 
- 
- 
- .home__title{
-   font-size: var(--biggest-font-size);
- }
- 
- .home__blob{
-   width: 600px;
-   border-radius: 12.5rem;
- }
- 
- .gallery__photos{
-   width: 600px;
- }
- 
- .home__profile{
-   width: 600px;
-   height: 100%;
- }
- 
- .footer__container{
-   padding: 4rem 0 3rem;
- }
- 
- .footer__copy{
-   margin-top: 5rem;
-   margin-bottom: 1rem;
- }
- 
- }

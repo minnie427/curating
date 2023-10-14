@@ -29,7 +29,7 @@ const linkAction = () =>{
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*=============== SWIPER PROJECTS ===============*/
-let swiperProjects = new Swiper(".projects__container", {
+let swiperProjects = new Swiper(".gallery__container", {
     loop: true,
     spaveBetween: 24,
 
