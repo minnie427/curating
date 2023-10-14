@@ -59,9 +59,9 @@ let swiperProjects = new Swiper(".projects__container", {
 
 /*=============== EMAIL JS ===============*/
 const contactForm = document.getElementById('contact-form'),
-    contactName = document.getElementById('contact-name'),
-    contactEmail = document.getElementById('contact-email'),
-    contactProject = document.getElementById('contact-project'),
+    contactName = document.getElementById('contact-q1'),
+    contactEmail = document.getElementById('contact-q2'),
+    contactProject = document.getElementById('contact-q3'),
     contactMessage = document.getElementById('contact-message')
 
 const sendEmail = (e) =>{
@@ -69,24 +69,24 @@ const sendEmail = (e) =>{
 
     if(contactName.value ==='' || contactEmail.value === '' || contactProject.value === ''){
         //Adding and removing colours
-        contactMessage.classList.remove('color-blue')
-        contactMessage.classList.add('color-red')
+        contactMessage.classList.remove('color-green')
+        contactMessage.classList.add('color-pink')
         //show message
         contactMessage.textContent = 'Please fill out all sections😎'
     }else{
         //serviceID - templateID - #form - publickey
-        emailjs.sendForm('service_2t3wq5f','template_l2xeqjn','#contact-form','TGDTnYd0quu6avu4h')
-            .them(() =>{
+        emailjs.sendForm('service_egzkzek','template_l2xeqjn','#contact-form','2pC3FICmBjvfc6Rxw')
+            .then(() =>{
                 //show message and add color
-                contactMessage.classList.add('color-blue')
-                contactMessage.textContent = 'Thank you 👍🏻'
+                contactMessage.classList.add('color-green')
+                contactMessage.textContent = 'Sent! Much appreciated👍🏻'
 
                 //remove message after five seconds
                 setTimeout (() =>{
                     contactMessage.textContent = ''
                 }, 5000)
             }, (error) =>{
-                alert('OOPS! Something was wrong...', error)
+                alert('Oops! Something was wrong...', error)
             })
 
             //To clear the input field

@@ -14,6 +14,7 @@
   --text-color-light: hsl(207, 4%, 56%);
   --body-color: hsl(207, 4%, 99%);
   --body-color2: hsl(304, 100%, 57%);
+  --body-color3: hsl(117, 100%, 57%);
   --container-color: hsl(207, 4%, 95%);
 
   /* Change the first number */
@@ -48,13 +49,13 @@
 /* Responsive typography */
 @media screen and (min-width: 1024px) {
   :root {
-    --biggest-font-size: 4.5rem;
-    --h1-font-size: 3rem;
-    --h2-font-size: 2rem;
-    --h3-font-size: 1.5rem;
-    --normal-font-size: 2rem;
-    --small-font-size: 2rem;
-    --smaller-font-size: 2rem;
+    --biggest-font-size: 4rem;
+    --h1-font-size: 2.5rem;
+    --h2-font-size: 1.8rem;
+    --h3-font-size: 1.3rem;
+    --normal-font-size: 1.7rem;
+    --small-font-size: 1.5rem;
+    --smaller-font-size: 1.3rem;
     --tiny-font-size: 1rem;
   }
 }
@@ -115,6 +116,7 @@ img {
 body.dark-theme {
   --title-color: hsl(207, 4%, 95%);
   --text-color: hsl(207, 4%, 65%);
+  --text-color-light: hsl(207, 4%, 56%);
   --body-color: hsl(207, 4%, 10%);
   --container-color: hsl(207, 4%, 12%);
 }
@@ -132,7 +134,7 @@ body.dark-theme {
 }
 
 .dark-theme .section__border{
-  border-bottom: 1px solid hsl(141, 100%, 54%);
+  border-bottom: 1px solid var(--body-color3);
 }
 
 .dark-theme::-webkit-scrollbar{
@@ -353,7 +355,7 @@ body.dark-theme {
 
 
 
-/*=============== about / SKILLS ===============*/
+/*=============== about ===============*/
 
 .about__container{
   row-gap: 4rem;
@@ -387,7 +389,7 @@ body.dark-theme {
 /* Animation skills */
 
 
-/*=============== Gallery / QUALIFICATION  ===============*/
+/*=============== Gallery ===============*/
 
 .projects__container{
   overflow: initial;
@@ -435,7 +437,7 @@ transition: background .4s; /* for dark mode animation */
   width: 300px;
 }
 
-/*=============== minnie / SERVICES ===============*/
+/*=============== minnie  ===============*/
 .minnie__container{
   row-gap: 4rem;
   padding-top: 2em;
@@ -447,11 +449,15 @@ transition: background .4s; /* for dark mode animation */
   row-gap: 2rem;
 }
 
+.minnie .section__title{
+  color: var(--body-color2);
+}
+
 .minnie__info-title{
   font-family: var(--body-font);
   font-size: var(--font-medium);
   font-weight: 400;
-  color: var(--text-color-light);
+  color: var(--body-color2);
   margin-bottom: 1rem;
 }
 
@@ -466,7 +472,7 @@ transition: background .4s; /* for dark mode animation */
 
 .minnie__img-description{
   font-family: var(--title-font);
-  color: var(--title-color);
+  color: var(--body-color2);
   text-align: center;
   font-size: var(--small-font-size);
 }
@@ -485,7 +491,7 @@ transition: background .4s; /* for dark mode animation */
  margin-bottom: 1.25rem;
  margin-top: 1.25rem;
 }
-/*=============== adrian/ PROJECTS ===============*/
+/*=============== adrian ===============*/
 
 .adrian__container{
   row-gap: 4rem;
@@ -496,6 +502,10 @@ transition: background .4s; /* for dark mode animation */
 .adrian__info{
   display: grid;
   row-gap: 2rem;
+}
+
+.minnie .section__title{
+  color: var(--body-color2);
 }
 
 .adrian__info-title{
@@ -648,12 +658,13 @@ transition: background .4s; /* for dark mode animation */
 }
 
 .contact__form-input{
+  color: var(--title-color);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  border: 2px solid var(--text-color-light);
+  border: 2px solid var(--body-color2);
   border-radius: 0.4rem;
   padding: 2rem;
   font-size: var(--normal-font-size);
@@ -679,6 +690,7 @@ transition: background .4s; /* for dark mode animation */
 
 .contact__form-area{
   height: 15rem;
+ 
 }
 
 .contact__form-area textarea{
@@ -709,11 +721,11 @@ transition: background .4s; /* for dark mode animation */
 }
 
 /* Status color */
-.color-red{
-  color: hsl(314, 71%, 50%);
+.color-pink{
+  color: hsl(314, 92%, 53%);
 }
 
-.color-blue{
+.color-green{
   color: hsl(139, 71%, 50%);
 }
 
@@ -837,7 +849,7 @@ transition: background .4s; /* for dark mode animation */
   }
 
   .nav__link{
-    font-size: var(--normal-font-size);
+    font-size: var(--smaller-font-size);
   }
 
   .dark-theme .nav,
